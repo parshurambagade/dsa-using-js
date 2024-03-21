@@ -84,6 +84,22 @@ Adds one or more elements to the beginning of an array.
 
     arr.unshift("orange");
 
+#### Array.from():
+
+
+Creates a new shallow-copied Array instance from an array-like or iterable object.
+
+    const arrayLike = {0: 'a', 1: 'b', 2: 'c', length: 3};
+    const newArray = Array.from(arrayLike);
+
+    console.log(newArray); // Output: ['a', 'b', 'c']
+
+    const iterable = 'hello';
+    const newArray2 = Array.from(iterable);
+
+    console.log(newArray2); // Output: ['h', 'e', 'l', 'l', 'o']
+    
+
 ### Accessing and Manipulating Elements
 
 #### slice:
